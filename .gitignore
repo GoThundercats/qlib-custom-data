@@ -1,0 +1,17 @@
+# Data files
+*.csv
+*.bin
+qlib_data/
+csv_data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints
