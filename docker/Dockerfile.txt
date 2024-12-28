@@ -1,0 +1,7 @@
+FROM microsoft/qlib
+
+# Install additional models
+RUN pip install catboost xgboost torch
+
+# Set working directory
+WORKDIR /root/scripts

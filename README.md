@@ -1,7 +1,7 @@
 # Qlib Custom Data Project
 
-## Setup
-This repository contains the setup for custom stock data analysis using Qlib.
+## Overview
+Custom stock data analysis setup using Qlib, with support for CSV data conversion and visualization.
 
 ## Directory Structure
 - `/data`: Location for CSV and converted bin files (not tracked in git)
@@ -9,6 +9,13 @@ This repository contains the setup for custom stock data analysis using Qlib.
 - `/docker`: Docker-related files
 - `/notebooks`: Jupyter notebooks for analysis
 
-## Data Locations
-- CSV file: `/root/.qlib/csv_data/my_data/all_stock_data.csv`
-- Converted data: `/root/.qlib/qlib_data/my_data/`
+## Setup Instructions
+
+### 1. Data Preparation
+- Place your CSV file at: `/root/.qlib/csv_data/my_data/all_stock_data.csv`
+- CSV must have columns: date, open, high, low, close, volume, factor
+
+### 2. Convert Data
+Run the conversion script in your Qlib container:
+```bash
+python scripts/dump_bin.py
